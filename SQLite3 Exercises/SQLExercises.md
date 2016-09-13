@@ -1,6 +1,6 @@
                                         Assignment: The Biblioteca database
 
-1. Who checked out the book 'The Hobbit’?
+1.Who checked out the book 'The Hobbit’?
 
 		select  name from member, book, checkout_item where checkout_item.member_id = member.id and 
 		checkout_item.book_id=book.id and book.title = "The Hobbit"
@@ -9,13 +9,13 @@
 Answer: "Anand Beck"
 
 
-2. How many people have not checked out anything?
+2.How many people have not checked out anything?
 
             select count (name) from member where member.id not in (Select checkout_item.member_id from checkout_item)
             
 Answer: 37
 
-3. What books and movies aren't checked out?
+3.What books and movies aren't checked out?
 
 	select id, title from book where book.id not in 
 	(select checkout_item.book_id from checkout_item where checkout_item.book_id is not null)
@@ -36,7 +36,7 @@ Answer:
 	    "9"	"To Kill a Mockingbird"
 	    "10"	"Domain Driven Design"
 
-4. Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. 
+4.Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. 
 Use your query from question 1 to verify that you have checked it out. Also, provide the SQL used to update the database.
 
 		insert into book (title) values ("The Pragmatic Programmer");
@@ -52,7 +52,7 @@ Use your query from question 1 to verify that you have checked it out. Also, pro
 		      
 Answer: Cristina Rivera
 
-5. Who has checked out more that 1 item?  Tip: Research the GROUP BY syntax.
+5.Who has checked out more that 1 item?  Tip: Research the GROUP BY syntax.
 
 		select name from member 
 		where member.id in
@@ -63,6 +63,6 @@ Answer: Cristina Rivera
 		    
 Answer: 
 		    
-"Anand Beck"
-"Frank Smith"
+		"Anand Beck"
+		"Frank Smith"
 
