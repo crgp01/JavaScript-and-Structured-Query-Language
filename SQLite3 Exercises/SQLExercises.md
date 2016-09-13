@@ -13,7 +13,7 @@ Answer: "Anand Beck"
 
             select count (name) from member where member.id not in (Select checkout_item.member_id from checkout_item)
             
-            Answer: 37
+Answer: 37
 
 3. What books and movies aren't checked out?
 
@@ -50,7 +50,7 @@ Use your query from question 1 to verify that you have checked it out. Also, pro
 		select  name from member, book, checkout_item where checkout_item.member_id = member.id 
 		and checkout_item.book_id=book.id and book.title like "The Pragmatic Programmer";
 		      
-		Answer: Cristina Rivera
+Answer: Cristina Rivera
 
 5. Who has checked out more that 1 item?  Tip: Research the GROUP BY syntax.
 
@@ -61,8 +61,8 @@ Use your query from question 1 to verify that you have checked it out. Also, pro
 		group by checkout_item .member_id
 		having count(checkout_item.member_id) > 1)
 		    
-		Answer: 
+Answer: 
 		    
-		"Anand Beck"
-		"Frank Smith"
+"Anand Beck"
+"Frank Smith"
 
