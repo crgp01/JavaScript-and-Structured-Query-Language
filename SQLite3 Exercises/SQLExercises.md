@@ -11,7 +11,8 @@ Answer: "Anand Beck"
 
 2.How many people have not checked out anything?
 
-            select count (name) from member where member.id not in (Select checkout_item.member_id from checkout_item)
+            select count (name) from member where member.id not in 
+            (Select checkout_item.member_id from checkout_item)
             
 Answer: 37
 
@@ -37,7 +38,8 @@ Answer:
 	    "10"	"Domain Driven Design"
 
 4.Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. 
-Use your query from question 1 to verify that you have checked it out. Also, provide the SQL used to update the database.
+Use your query from question 1 to verify that you have checked it out. 
+Also, provide the SQL used to update the database.
 
 		insert into book (title) values ("The Pragmatic Programmer");
 		      
