@@ -25,16 +25,16 @@ Answer: "Anand Beck"
 
 Answer: 
 
-    "2"	"Fellowship of the Ring"
-    "6"	"1984"
-    "6"	"Thin Red Line"
-    "7"	"Crouching Tiger, Hidden Dragon"
-    "7"	"Tom Sawyer"
-    "8"	"Catcher in the Rye"
-    "8"	"Lawrence of Arabia"
-    "9"	"Office Space"
-    "9"	"To Kill a Mockingbird"
-    "10"	"Domain Driven Design"
+	    "2"	"Fellowship of the Ring"
+	    "6"	"1984"
+	    "6"	"Thin Red Line"
+	    "7"	"Crouching Tiger, Hidden Dragon"
+	    "7"	"Tom Sawyer"
+	    "8"	"Catcher in the Rye"
+	    "8"	"Lawrence of Arabia"
+	    "9"	"Office Space"
+	    "9"	"To Kill a Mockingbird"
+	    "10"	"Domain Driven Design"
 
 4. Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. 
 Use your query from question 1 to verify that you have checked it out. Also, provide the SQL used to update the database.
